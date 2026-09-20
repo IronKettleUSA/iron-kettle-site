@@ -18,9 +18,9 @@ export function HeroSection() {
             <span className="text-[hsl(18,92%,52%)]">Burger Press.</span>
           </h1>
           <p className="mt-6 max-w-md text-lg text-[#b8b5ad]">
-            Heavy. Rugged. Made from 304 stainless steel. Built to
-            deliver a crispy, edge-to-edge smash-burger crust — cookout after
-            cookout, for the rest of your life.
+            Heavy. Rugged. Made from 304 stainless steel. Built for years of
+            cookouts, with a crispy, edge-to-edge smash-burger crust every
+            time.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
