@@ -19,8 +19,8 @@ export function WaitlistSection() {
         <p className="mt-6 max-w-lg text-lg text-[#b8b5ad]">
           Reserve now to lock in{" "}
           <span className="font-semibold text-[hsl(18,92%,52%)]">$44.99</span>{" "}
-          — 35% off the $69.99 launch price. No payment today. We&apos;ll
-          email you before the first production run ships.
+          — Save $25 on the First-Run Reservation Price. No payment today.
+          We&apos;ll email you before the first production run ships.
         </p>
         <div className="mt-10">
           <WaitlistForm />
