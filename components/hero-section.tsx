@@ -13,7 +13,7 @@ export function HeroSection() {
             First Run &middot; Limited to 100 Units
           </p>
           <h1 className="font-display text-5xl font-bold uppercase leading-[1.05] tracking-tight text-[#f4f2ee] sm:text-6xl lg:text-7xl">
-            This Ain&apos;t Your Mamma&apos;s
+            This Ain&apos;t Your Mama&apos;s
             <br />
             <span className="text-[hsl(18,92%,52%)]">Burger Press.</span>
           </h1>

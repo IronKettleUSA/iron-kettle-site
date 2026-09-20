@@ -15,7 +15,7 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Iron Kettle USA | This Ain't Your Mamma's Burger Press",
+  title: "Iron Kettle USA | This Ain't Your Mama's Burger Press",
   description:
     "Commercial-grade 304 stainless steel smash burger press. Heavy. Rugged. Built to last. Pre-order the first run now.",
 };
