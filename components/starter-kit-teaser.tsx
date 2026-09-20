@@ -11,7 +11,7 @@ export function StarterKitTeaser() {
           The Iron Kettle Starter Kit
         </h2>
         <p className="mx-auto mt-6 max-w-xl text-lg text-[#b8b5ad]">
-          Our burger press, paired with our own small-batch homemade beef
+          Our burger press, paired with our own small-batch rendered beef
           tallow. Everything you need for a real smash burger — no seed oils,
           no shortcuts. Join the waitlist below to be first in line.
         </p>
