@@ -13,7 +13,7 @@ export default function ContactPage() {
       </p>
       <h2>Email</h2>
       <p>
-        <a href="mailto:wayne@ironkettleusa.com">wayne@ironkettleusa.com</a>
+        <a href="mailto:hello@ironkettleusa.com">hello@ironkettleusa.com</a>
       </p>
       <h2>Response Time</h2>
       <p>

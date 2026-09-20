@@ -25,8 +25,8 @@ export default function ReturnsPage() {
         </li>
         <li>
           To start a return, email us at{" "}
-          <a href="mailto:wayne@ironkettleusa.com">
-            wayne@ironkettleusa.com
+          <a href="mailto:hello@ironkettleusa.com">
+            hello@ironkettleusa.com
           </a>{" "}
           with your order details.
         </li>

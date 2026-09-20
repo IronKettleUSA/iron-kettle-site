@@ -36,12 +36,12 @@ export default function PrivacyPage() {
       <p>
         You can ask us to remove your information from our list at any time
         by emailing{" "}
-        <a href="mailto:wayne@ironkettleusa.com">wayne@ironkettleusa.com</a>.
+        <a href="mailto:hello@ironkettleusa.com">hello@ironkettleusa.com</a>.
       </p>
       <h2>Contact</h2>
       <p>
         Questions about this policy? Reach us at{" "}
-        <a href="mailto:wayne@ironkettleusa.com">wayne@ironkettleusa.com</a>.
+        <a href="mailto:hello@ironkettleusa.com">hello@ironkettleusa.com</a>.
       </p>
     </InfoPageShell>
   );

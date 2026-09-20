@@ -60,7 +60,7 @@ export default function TermsPage() {
       <h2>Contact</h2>
       <p>
         Questions about these terms? Email{" "}
-        <a href="mailto:wayne@ironkettleusa.com">wayne@ironkettleusa.com</a>.
+        <a href="mailto:hello@ironkettleusa.com">hello@ironkettleusa.com</a>.
       </p>
     </InfoPageShell>
   );
