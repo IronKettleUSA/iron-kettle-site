@@ -20,9 +20,9 @@ export default function ShippingPage() {
       </p>
       <h2>Production & Shipping Timeline</h2>
       <p>
-        <strong>Estimated first-run shipping: November 2026.</strong> Once
-        units are ready, reserved customers will be contacted by email with
-        next steps and estimated delivery windows.
+        <strong>Target first-run shipping: November 2026.</strong> Timing may
+        change based on final production scheduling and quality inspection.
+        Reserved customers will receive updates before payment is requested.
       </p>
       <h2>Tracking</h2>
       <p>
