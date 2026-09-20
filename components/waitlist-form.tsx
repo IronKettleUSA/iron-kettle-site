@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Loader2, Check } from "lucide-react";
 
 export function WaitlistForm() {
@@ -45,29 +46,51 @@ export function WaitlistForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-md">
+    <form onSubmit={handleSubmit} className="w-full max-w-md" noValidate={false}>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        <Input
-          type="text"
-          required
-          placeholder="First name"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-          className="h-14 border-white/20 bg-[#0a0b0c] text-base text-[#e9e7e2] placeholder:text-[#6b6862] focus-visible:ring-[hsl(18,92%,52%)]"
-        />
-        <Input
-          type="text"
-          required
-          placeholder="Last name"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-          className="h-14 border-white/20 bg-[#0a0b0c] text-base text-[#e9e7e2] placeholder:text-[#6b6862] focus-visible:ring-[hsl(18,92%,52%)]"
-        />
+        <div>
+          <Label htmlFor="firstName" className="sr-only">
+            First name
+          </Label>
+          <Input
+            id="firstName"
+            name="firstName"
+            type="text"
+            required
+            autoComplete="given-name"
+            placeholder="First name"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            className="h-14 border-white/20 bg-[#0a0b0c] text-base text-[#e9e7e2] placeholder:text-[#6b6862] focus-visible:ring-[hsl(18,92%,52%)]"
+          />
+        </div>
+        <div>
+          <Label htmlFor="lastName" className="sr-only">
+            Last name
+          </Label>
+          <Input
+            id="lastName"
+            name="lastName"
+            type="text"
+            required
+            autoComplete="family-name"
+            placeholder="Last name"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            className="h-14 border-white/20 bg-[#0a0b0c] text-base text-[#e9e7e2] placeholder:text-[#6b6862] focus-visible:ring-[hsl(18,92%,52%)]"
+          />
+        </div>
       </div>
       <div className="mt-3">
+        <Label htmlFor="email" className="sr-only">
+          Email address
+        </Label>
         <Input
+          id="email"
+          name="email"
           type="email"
           required
+          autoComplete="email"
           placeholder="you@email.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -75,9 +98,15 @@ export function WaitlistForm() {
         />
       </div>
       <div className="mt-3">
+        <Label htmlFor="zipCode" className="sr-only">
+          Shipping zip code (optional)
+        </Label>
         <Input
+          id="zipCode"
+          name="zipCode"
           type="text"
           inputMode="numeric"
+          autoComplete="postal-code"
           placeholder="Shipping zip code (optional)"
           value={zipCode}
           onChange={(e) => setZipCode(e.target.value)}
@@ -95,6 +124,14 @@ export function WaitlistForm() {
           "Reserve Mine"
         )}
       </button>
+      <p className="mt-3 text-center text-xs text-[#7d7a73]">
+        By reserving, you agree to receive first-run product updates. No
+        payment is collected. See our{" "}
+        <a href="/privacy" className="underline hover:text-[hsl(18,92%,52%)]">
+          Privacy Policy
+        </a>
+        .
+      </p>
       {status === "error" && (
         <p className="mt-3 text-sm text-red-400">{errorMsg}</p>
       )}
