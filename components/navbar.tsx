@@ -11,7 +11,7 @@ export function Navbar() {
           href="#waitlist"
           className="rounded-sm border border-[hsl(18,92%,52%)] px-4 py-2 font-display text-sm font-semibold uppercase tracking-wider text-[hsl(18,92%,52%)] transition-colors hover:bg-[hsl(18,92%,52%)] hover:text-[#0a0b0c]"
         >
-          Pre-Order
+          Reserve Now
         </a>
       </div>
     </header>

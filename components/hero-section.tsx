@@ -31,7 +31,7 @@ export function HeroSection() {
               $44.99
             </span>
             <span className="rounded-sm bg-[hsl(18,70%,38%)]/20 px-3 py-1 font-display text-xs font-semibold uppercase tracking-wider text-[hsl(18,92%,52%)]">
-              Pre-Order Price
+              First-Run Reservation Price
             </span>
           </div>
 
@@ -40,10 +40,11 @@ export function HeroSection() {
               href="#waitlist"
               className="ember-glow inline-block rounded-sm bg-[hsl(18,92%,52%)] px-8 py-4 font-display text-base font-bold uppercase tracking-wider text-[#0a0b0c] transition-transform hover:scale-[1.02]"
             >
-              Reserve Yours &rarr;
+              Reserve Your First-Run Press &rarr;
             </a>
             <p className="mt-3 text-sm text-[#7d7a73]">
-              Ships in 3–4 weeks. No charge until launch.
+              No payment today. We&apos;ll email you before the first
+              production run ships.
             </p>
           </div>
         </div>

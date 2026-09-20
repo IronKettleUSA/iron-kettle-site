@@ -14,12 +14,13 @@ export function WaitlistSection() {
           Limited First Run &middot; 100 Units
         </p>
         <h2 className="font-display text-4xl font-bold uppercase leading-tight text-[#f4f2ee] sm:text-5xl">
-          Reserve Yours Before They&apos;re Gone.
+          Reserve Your First-Run Press
         </h2>
         <p className="mt-6 max-w-lg text-lg text-[#b8b5ad]">
-          Pre-order price locked at{" "}
+          Reserve now to lock in{" "}
           <span className="font-semibold text-[hsl(18,92%,52%)]">$44.99</span>{" "}
-          — 35% off the $69.99 launch price. Ships in 3–4 weeks.
+          — 35% off the $69.99 launch price. No payment today. We&apos;ll
+          email you before the first production run ships.
         </p>
         <div className="mt-10">
           <WaitlistForm />
