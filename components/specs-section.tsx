@@ -1,7 +1,7 @@
 "use client";
 
 const specs = [
-  { label: "Material", value: "304 Stainless Steel — Throughout" },
+  { label: "Material", value: "304 Stainless Steel" },
   { label: "Net Weight", value: "1.62 kg / 3.57 lb" },
   { label: "Base Diameter", value: "150 mm / 5.9 in" },
   { label: "Base Thickness", value: "10 mm / 0.39 in" },
@@ -38,9 +38,9 @@ export function SpecsSection() {
         </div>
 
         <p className="mt-8 max-w-2xl text-[#b8b5ad]">
-          Unlike cast iron competitors, 304 stainless steel won&apos;t rust,
-          won&apos;t need seasoning, and cleans up in the dishwasher. This is
-          a tool built for real use — not a drawer decoration.
+          Unlike cast iron competitors, 304 stainless steel resists rust and
+          won&apos;t need seasoning. We recommend hand washing for now — this
+          is a tool built for real use, not a drawer decoration.
         </p>
       </div>
     </section>

@@ -14,10 +14,10 @@ export default function AboutPage() {
         crack, or end up in a drawer after one summer.
       </p>
       <p>
-        Our first product, the Iron Kettle Burger Press, is machined from
-        solid 304 stainless steel — no cast iron rust, no plastic parts, no
-        gimmicks. It's built to deliver a perfect edge-to-edge smash-burger
-        crust, cookout after cookout, for years to come.
+        Our first product, the Iron Kettle Burger Press, is built from 304
+        stainless steel — no cast iron rust, no plastic parts, no gimmicks.
+        It's built to deliver a perfect edge-to-edge smash-burger crust,
+        cookout after cookout, for years to come.
       </p>
       <p>
         We're a small, first-run operation — this is a limited batch of 100

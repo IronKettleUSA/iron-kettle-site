@@ -29,7 +29,7 @@ export function LifestyleSection() {
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[hsl(18,92%,52%)]" />
-              Rust-proof stainless — dishwasher safe, zero seasoning
+              Rust-resistant stainless — hand wash recommended, zero seasoning
             </li>
           </ul>
         </div>
