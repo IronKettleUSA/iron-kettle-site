@@ -5,7 +5,10 @@ import { Input } from "@/components/ui/input";
 import { Loader2, Check } from "lucide-react";
 
 export function WaitlistForm() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
+  const [zipCode, setZipCode] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">(
     "idle"
   );
@@ -19,7 +22,7 @@ export function WaitlistForm() {
       const res = await fetch("/api/waitlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, firstName, lastName, zipCode }),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
@@ -43,7 +46,25 @@ export function WaitlistForm() {
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-md">
-      <div className="flex flex-col gap-3 sm:flex-row">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <Input
+          type="text"
+          required
+          placeholder="First name"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+          className="h-14 border-white/20 bg-[#0a0b0c] text-base text-[#e9e7e2] placeholder:text-[#6b6862] focus-visible:ring-[hsl(18,92%,52%)]"
+        />
+        <Input
+          type="text"
+          required
+          placeholder="Last name"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+          className="h-14 border-white/20 bg-[#0a0b0c] text-base text-[#e9e7e2] placeholder:text-[#6b6862] focus-visible:ring-[hsl(18,92%,52%)]"
+        />
+      </div>
+      <div className="mt-3">
         <Input
           type="email"
           required
@@ -52,18 +73,28 @@ export function WaitlistForm() {
           onChange={(e) => setEmail(e.target.value)}
           className="h-14 border-white/20 bg-[#0a0b0c] text-base text-[#e9e7e2] placeholder:text-[#6b6862] focus-visible:ring-[hsl(18,92%,52%)]"
         />
-        <button
-          type="submit"
-          disabled={status === "loading"}
-          className="ember-glow flex h-14 items-center justify-center rounded-sm bg-[hsl(18,92%,52%)] px-8 font-display text-sm font-bold uppercase tracking-wider text-[#0a0b0c] transition-transform hover:scale-[1.02] disabled:opacity-60"
-        >
-          {status === "loading" ? (
-            <Loader2 className="h-5 w-5 animate-spin" />
-          ) : (
-            "Reserve Mine"
-          )}
-        </button>
       </div>
+      <div className="mt-3">
+        <Input
+          type="text"
+          inputMode="numeric"
+          placeholder="Shipping zip code (optional)"
+          value={zipCode}
+          onChange={(e) => setZipCode(e.target.value)}
+          className="h-14 border-white/20 bg-[#0a0b0c] text-base text-[#e9e7e2] placeholder:text-[#6b6862] focus-visible:ring-[hsl(18,92%,52%)]"
+        />
+      </div>
+      <button
+        type="submit"
+        disabled={status === "loading"}
+        className="ember-glow mt-3 flex h-14 w-full items-center justify-center rounded-sm bg-[hsl(18,92%,52%)] px-8 font-display text-sm font-bold uppercase tracking-wider text-[#0a0b0c] transition-transform hover:scale-[1.02] disabled:opacity-60"
+      >
+        {status === "loading" ? (
+          <Loader2 className="h-5 w-5 animate-spin" />
+        ) : (
+          "Reserve Mine"
+        )}
+      </button>
       {status === "error" && (
         <p className="mt-3 text-sm text-red-400">{errorMsg}</p>
       )}
