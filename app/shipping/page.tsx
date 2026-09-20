@@ -20,9 +20,9 @@ export default function ShippingPage() {
       </p>
       <h2>Production & Shipping Timeline</h2>
       <p>
-        Our first batch is in production with an estimated lead time of 3-4
-        weeks. Once units are ready, reserved customers will be contacted by
-        email with next steps and estimated delivery windows.
+        <strong>Estimated first-run shipping: November 2026.</strong> Once
+        units are ready, reserved customers will be contacted by email with
+        next steps and estimated delivery windows.
       </p>
       <h2>Tracking</h2>
       <p>
