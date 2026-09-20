@@ -22,10 +22,20 @@ export default function TermsPage() {
         guarantee a unit will be available; our first run is limited to 100
         units.
       </p>
-      <h2>Pricing</h2>
+      <h2>First-Run Reservation Pricing</h2>
       <p>
-        Prices shown on this site, including reservation pricing, are subject
-        to change until an order is completed and payment is collected.
+        Customers who complete a First-Run Reservation while our first batch
+        of 100 units is available are guaranteed a price of{" "}
+        <strong>$44.99</strong> for their unit when payment is collected,
+        even if our listed price changes before then. This guarantee applies
+        only to qualified First-Run Reservations — those submitted before our
+        first run of 100 units sells out or the reservation period closes,
+        whichever happens first.
+      </p>
+      <p>
+        Pricing for any units beyond the first 100, future production runs,
+        bundles, or additional products is not covered by this guarantee and
+        may differ from the First-Run Reservation price.
       </p>
       <h2>Product Information</h2>
       <p>
